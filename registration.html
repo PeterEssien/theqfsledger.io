@@ -1,31 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--<title>Login & Registration Form | CoderGirl</title>-->
-  <!---Custom CSS File--->
-  <link rel="stylesheet" href="log.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./log.css">
+    <title>TheQFSLedfer - Register</title>
 </head>
 <body>
-  <div class="container">
-    
-    <div class="registration form">
-      <header>Signup</header>
-      <form action="#">
-        <input type="text" placeholder="Enter your email">
-        <input type="password" placeholder="Create a password">
-        <input type="password" placeholder="Confirm your password">
-        <input type="button" class="button" value="Signup">
-      </form>
-      <div class="signup">
-        <span class="signup">Already have an account?
-         <label for="check"><a href="login.html">Login</label></a>
-        </span>
-      </div>
+    <main>
+        <header>
+            <img src="39BDCB5F-6279-4510-8963-CA45AE7F35C9.jpeg" height="125">
+        </header>
+        <section id="form-login-signup">
+            <header class="header-form">
+                <div>
+                   
+                    <h1>Secure Registration</h1>
+                </div>
+                <p>Create an account to get started</p>
+            </header>
+
+            <form action="#" method="POST" autocomplete="off">
+                <fieldset class="login">
+                    <legend>Login</legend>
+                    
+                    <label for="email">Full Name:</label>
+                    <input id="fullname" type="text" name="fullname" placeholder="Enter your Full Name" required>
+                   
+
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+                    
+                    
+                    <label for="email">Username:</label>
+                    <input id="username" type="text" name="username" placeholder="Enter your preferred Username" required>
+                    
+
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" name="password" placeholder="Enter your Password" required>
+                    
+                    <button type="button"class="btn-senha">
+                        <img class="eye-password" src="https://raw.githubusercontent.com/danieldemoura/login-form-css/main/assets/eye-on.svg" alt="Desenho de um olho">
+                    </button>
+                </fieldset>
+                <fieldset class="information">
+                    <legend>Informações Extras</legend>
+                    
+
+                    
+                </fieldset>
+                <button id="btn-login">Sign Up</button>
+            </form>
+            <p>
+                Already have an account? <strong><a href="#">Login Here</a></strong>
+            </p>
+        </section>
+    </main>
+    <div class="background">
     </div>
-  
-  </div>
+
+    <script src="log.js"></script>
 </body>
 </html>
