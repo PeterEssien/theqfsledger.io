@@ -1,31 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--<title>Login & Registration Form | CoderGirl</title>-->
-  <!---Custom CSS File--->
-  <link rel="stylesheet" href="log.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./log.css">
+    <title>TheQFSLedfer - Login</title>
 </head>
 <body>
-  <div class="container">
-    <input type="checkbox" id="check">
-    <div class="login form">
-      <header>Login</header>
-      <form action="#">
-        <input type="text" placeholder="Enter your email">
-        <input type="password" placeholder="Enter your password">
-        <a href="#">Forgot password?</a>
-        <input type="button" class="button" value="Login">
-      </form>
-      <div class="signup">
-        <span class="signup">Don't have an account?
-         <label for="check"><a href="registration.html">Signup</label>
-        </span>
-      </div>
+    <main>
+        <header>
+            <img src="1EDE74EA-1F27-4559-9E15-428BC2DC7456.jpeg" alt="Logo">
+        </header>
+        <section id="form-login-signup">
+            <header class="header-form">
+                <div>
+                   
+                    <h1>Secure Login</h1>
+                </div>
+                <p>login to your QFSLedger dashboard</p>
+            </header>
+
+            <form action="#" method="POST" autocomplete="off">
+                <fieldset class="login">
+                    <legend>Login</legend>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" autofocus name="email" placeholder="Enter your Email">
+                    <img class="img-email" src="https://raw.githubusercontent.com/danieldemoura/login-form-css/main/assets/mail.svg" alt="Imagem de uma carta, representando um e-mail">
+
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" name="password" placeholder="Enter your Password">
+                    <img class="img-password" src="https://raw.githubusercontent.com/danieldemoura/login-form-css/main/assets/lock.svg" alt="Imagem de um cadeado para representar o campo de senha">
+                    <button type="button"class="btn-senha">
+                        <img class="eye-password" src="https://raw.githubusercontent.com/danieldemoura/login-form-css/main/assets/eye-on.svg" alt="Desenho de um olho">
+                    </button>
+                </fieldset>
+                <fieldset class="information">
+                    <legend>Informações Extras</legend>
+                    <div>
+                        <input id="lembre-me" type="checkbox" name="lembre-me">
+                        <label for="lembre-me">Remember Me</label>
+                    </div>
+
+                    <strong>
+                        <a href="#">Forgot Password</a>
+                    </strong>
+                </fieldset>
+                <button id="btn-login">Login</button>
+            </form>
+            <p>
+                Don't have an account? <strong><a href="#">Register Here</a></strong>
+            </p>
+        </section>
+    </main>
+    <div class="background">
     </div>
-  
-  </div>
+
+    <script src="log.js"></script>
 </body>
 </html>
