@@ -67,7 +67,7 @@
 			<a href="#" class="item" data-bs-toggle="modal" data-bs-target="#profile">
 				<div class="in">
 					<div>
-						Pete					</div>
+						<?php echo $_SESSION['username']; ?>					</div>
 					<span class="text-primary" style="color:white">
 						<i class="fas fa-edit"></i> EDIT PROFILE
 					</span>
@@ -83,7 +83,7 @@
 				<div class="in">
 					<div>Total Balance</div>
 					<span class="text-primary">
-						$0.00					</span>
+						$<?php echo $_SESSION['username']; ?>					</span>
 				</div>
 			</a>
 		</li>
@@ -95,7 +95,7 @@
 				<div class="in">
 					<div>Email</div>
 					<span class="text-primary">
-						fitpeteofboston@gmail.com					</span>
+						<?php echo $_SESSION['username']; ?>					</span>
 				</div>
 			</a>
 		</li>
@@ -207,7 +207,7 @@
 					<div class="form-group basic">
 						<div class="input-wrapper">
 							<label class="label" for="text1">Name</label>
-							<input type="text" class="form-control" name="name" value="Pete" required>
+							<input type="text" class="form-control" name="name" value="<?php echo $_SESSION['username']; ?>" required>
 						</div>
 					</div>
 					<div class="form-group basic">
@@ -320,9 +320,8 @@
 					<div class="image-wrapper"> <img src="upload/user-default.png" alt="image" class="imaged  w36" data-pagespeed-url-hash="1640529046" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> </div>
 					<div class="in">
 						<strong style="color:black!important">
-							Pete						</strong>
-						<div class="text-muted">
-							fitpeteofboston@gmail.com						</div>
+							<?php echo $_SESSION['username']; ?>						</strong>
+						<div class="text-muted"><?php echo $_SESSION['email']; ?>						</div>
 					</div>
 				</div>
 				<!-- * profile box -->
@@ -331,7 +330,7 @@
 					<div class="listview-title">Total Balance</div>
 					<div class="in">
 						<h2 class="amount">
-						 $0.00						</h2>
+						 $<?php echo $_SESSION['profits']; ?>						</h2>
 					</div>
 				</div>
 				<!-- * balance -->
