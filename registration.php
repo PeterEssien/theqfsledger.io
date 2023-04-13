@@ -66,6 +66,29 @@ body { position: absolute; }
 </head>
 
 <body class="authbody">
+	<?php
+require('db.php');
+// If form submitted, insert values into the database.
+
+if (isset($_REQUEST['email'])){
+        // removes backslashes
+  $username = stripslashes($_REQUEST['username']);
+        //escapes special characters in a string
+  $username = mysqli_real_escape_string($con,$username); 
+  $email = stripslashes($_REQUEST['email']);
+  $email = mysqli_real_escape_string($con,$email);
+  $password = stripslashes($_REQUEST['password']);
+  $password = mysqli_real_escape_string($con,$password);
+  $trn_date = date("Y-m-d H:i:s");
+        $query = "INSERT into `users` (username, password, email, trn_date)
+VALUES ('$username', '$password', '$email', '$trn_date')";
+        $result = mysqli_query($con,$query);
+        if($result){
+            echo "<div class='form'> <h3>You are registered successfully.</h3>
+<br/>Click here to <a href='login.php'>Login</a></div>";
+        }
+    }else{
+?>
 
 	<!-- App Header -->
 	<div class="appHeader no-border transparent position-absolute">
@@ -242,5 +265,8 @@ body { position: absolute; }
 	<script src="assets/js/jquery.min.js"></script>
 		<!--Start of Tawk.to Script-->
 <script type="text/javascript">var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();(function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src='https://embed.tawk.to/63d2a7ffc2f1ac1e202fc1cf/1gnne0gp0';s1.charset='UTF-8';s1.setAttribute('crossorigin','*');s0.parentNode.insertBefore(s1,s0);})();</script>
-<!--End of Tawk.to Script--></body>
+<!--End of Tawk.to Script-->
+	
+<?php } ?>
+	</body>
 </html>
