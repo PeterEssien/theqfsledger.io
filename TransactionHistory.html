@@ -106,9 +106,9 @@
 //]]></script><img src="upload/user-default.png" alt="image" class="imaged  w36" data-pagespeed-url-hash="1640529046" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> </div>
 					<div class="in">
 						<strong style="color:black!important">
-							Pete						</strong>
+							<?php echo $_SESSION['username']; ?>						</strong>
 						<div class="text-muted">
-							fitpeteofboston@gmail.com						</div>
+							<?php echo $_SESSION['email']; ?>						</div>
 					</div>
 				</div>
 				<!-- * profile box -->
@@ -117,7 +117,7 @@
 					<div class="listview-title">Total Balance</div>
 					<div class="in">
 						<h2 class="amount">
-						 $0.00						</h2>
+						 $<?php echo $_SESSION['profits']; ?>						</h2>
 					</div>
 				</div>
 				<!-- * balance -->
