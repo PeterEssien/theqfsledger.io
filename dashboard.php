@@ -119,7 +119,7 @@ include("auth.php");
 			<div class="balance">
 				<div class="left"> <span class="title">Total Balance</span>
 					<h1 class="total">
-					  $0.00					</h1>
+					  $<?php echo $_SESSION['profits']; ?>				</h1>
 				</div>
 				<div class="right text-primary font-weight-bold">
 
