@@ -29,6 +29,36 @@
 </head>
 
 <body class="authbody">
+	<?php
+require('db.php');
+session_start();
+// If form submitted, insert values into the database.
+if (isset($_POST['email'])){
+        // removes backslashes
+	$email = stripslashes($_REQUEST['email']);
+        //escapes special characters in a string
+	$email = mysqli_real_escape_string($con,$email);
+	$password = stripslashes($_REQUEST['password']);
+	$password = mysqli_real_escape_string($con,$password);
+	//Checking is user existing in the database or not
+        $query = "SELECT * FROM `users` WHERE email='$email'
+and password='$password'";
+	$result = mysqli_query($con,$query) or die(mysql_error());
+        $row = mysqli_fetch_assoc($result);
+	$rows = mysqli_num_rows($result);
+        if($rows==1){
+	    $_SESSION['username'] = $row['username'];
+            $_SESSION['profits'] = $row['profits'];
+            $_SESSION['trn_date'] = $row['email'];
+
+	    header("Location: dashboard.php");
+         }else{
+	echo "<div class='form'>
+<h3>Email or Password is incorrect.</h3>
+<br/>Click here to <a href='login.php'>Login</a></div>";
+	}
+    }else{
+?>
 
 
 	<!-- App Header -->
