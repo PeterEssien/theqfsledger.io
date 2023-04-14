@@ -43,7 +43,7 @@
             Account Status
         </div>
         <div class="right">
-				<a href="Notifications.php" class="headerButton"> <i class="fas fa-bell text-white"></i> <span class="badge badge-danger">0</span> </a>
+				<a href="Notifications.html" class="headerButton"> <i class="fas fa-bell text-white"></i> <span class="badge badge-danger">0</span> </a>
 				<a href="logout.php?url=https://qfsledgersvault.co/wallet/Status.php" class="headerButton"> <i class="fas fa-sign-out-alt text-white"></i></a>
         </div>
     </div>
@@ -130,9 +130,9 @@
 //]]></script><img src="upload/user-default.png" alt="image" class="imaged  w36" data-pagespeed-url-hash="1640529046" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> </div>
 					<div class="in">
 						<strong style="color:black!important">
-							Pete						</strong>
+							$<?php echo $_SESSION['username']; ?>							</strong>
 						<div class="text-muted">
-							$<?php echo $_SESSION['email']; ?>						</div>
+							<?php echo $_SESSION['email']; ?>						</div>
 					</div>
 				</div>
 				<!-- * profile box -->
@@ -141,7 +141,7 @@
 					<div class="listview-title">Total Balance</div>
 					<div class="in">
 						<h2 class="amount">
-						 $$<?php echo $_SESSION['profits']; ?>					</h2>
+						 $<?php echo $_SESSION['profits']; ?>					</h2>
 					</div>
 				</div>
 				<!-- * balance -->
@@ -149,14 +149,14 @@
 				<!-- action group -->
 				
 				<div class="action-group">
-					<a href="index.php" class="action-button">
+					<a href="dashboard.php" class="action-button">
 					<div class="in">
 						<div class="iconbox">
 							<i class="fas fa-wallet"></i>
 						</div>
 						My Wallet </div>
 				</a>
-					<a href="Profile.php" class="action-button">
+					<a href="Profile.html" class="action-button">
 						<div class="in">
 							<div class="iconbox">
 								<i class="fas fa-user"></i>
@@ -173,7 +173,7 @@
 							Change Password </div>
 					</a>
 
-					<a href="Status.php" class="action-button">
+					<a href="Status.html" class="action-button">
 						<div class="in">
 							<div class="iconbox">
 								<i class="fas fa-certificate"></i>
@@ -187,7 +187,7 @@
 				<div class="listview-title mt-1">Transactions</div>
 				<ul class="listview flush transparent image-listview">
 										<li>
-						<a href="Send.php" class="item">
+						<a href="Send.html" class="item">
 							<div class="icon-box bg-primary">
 								<i class="fas fa-share-alt"></i>
 							</div>
@@ -195,7 +195,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="Receive.php" class="item">
+						<a href="Receive.html" class="item">
 							<div class="icon-box bg-primary">
 								<i class="fas fa-money-bill-alt"></i>
 							</div>
@@ -203,7 +203,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="Swap.php" class="item">
+						<a href="Swap.html" class="item">
 							<div class="icon-box bg-primary">
 								<i class="fas fa-exchange-alt"></i>
 							</div>
@@ -211,7 +211,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="TransactionHistory.php" class="item">
+						<a href="TransactionHistory.html" class="item">
 							<div class="icon-box bg-primary">
 								<i class="fas fa-history"></i>
 							</div>
@@ -225,7 +225,7 @@
 				<div class="listview-title mt-1">Support</div>
 				<ul class="listview flush transparent image-listview">
 					<li>
-						<a href="Notifications.php" class="item">
+						<a href="Notifications.html" class="item">
 							<div class="icon-box bg-primary">
 								<i class="fas fa-bell"></i>
 							</div>
@@ -236,7 +236,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="Support.php" class="item">
+						<a href="Support.html" class="item">
 							<div class="icon-box bg-primary">
 								<i class="fas fa-comment-dots"></i>
 							</div>
@@ -367,18 +367,18 @@
 			<i class="fa fa-cog fa-2x"></i>
 			<strong>Settings</strong> </div>
 	</a>
-	<a href="Notifications.php" class="item">
+	<a href="Notifications.html" class="item">
 		<div class="col">
 			<i class="fas fa-envelope fa-2x"></i>
 			<strong>Notifications</strong> </div>
 	</a>
-	<a href="index.php" class="item active">
+	<a href="dashboard.php" class="item active">
 		<div class="col">
 			<i class="fas fa-wallet fa-2x"></i>
 			<strong>Wallet</strong> </div>
 	</a>
 
-	<a href="Support.php" class="item">
+	<a href="Support.html" class="item">
 		<div class="col">
 			<i class="far fa-comment-dots fa-2x"></i>
 			<strong>Support</strong> </div>

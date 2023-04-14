@@ -89,7 +89,7 @@ include("auth.php");
 				<div class="in">
 					<div>Total Balance</div>
 					<span class="text-primary">
-						$<?php echo $_SESSION['username']; ?>					</span>
+						$<?php echo $_SESSION['profits']; ?>					</span>
 				</div>
 			</a>
 		</li>
@@ -101,7 +101,7 @@ include("auth.php");
 				<div class="in">
 					<div>Email</div>
 					<span class="text-primary">
-						<?php echo $_SESSION['username']; ?>					</span>
+						<?php echo $_SESSION['email']; ?>					</span>
 				</div>
 			</a>
 		</li>
