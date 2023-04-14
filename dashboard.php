@@ -108,7 +108,7 @@ include("auth.php");
 							<option value="en|yi">Yiddish</option>
 						</select>
 						<div id="google_translate_element2"></div>
-					</div><a href="Notifications.html" class="headerButton"> <i class="fas fa-bell"></i> <span class="badge badge-danger">0</span> </a> <a href="Profile.html" class="headerButton"> <img src="upload/user-default.png" alt="image" class="imaged w32" data-pagespeed-url-hash="1640529046" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> </a> 
+					</div><a href="Notifications.html" class="headerButton"> <i class="fas fa-bell"></i> <span class="badge badge-danger">0</span> </a> <a href="Profile.php" class="headerButton"> <img src="upload/user-default.png" alt="image" class="imaged w32" data-pagespeed-url-hash="1640529046" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"> </a> 
 		</div>
 		</div><style>.wallet-card-section:before{background:#1b8da0!important}body.dark-mode .appHeader{border-bottom-color:#1b8da0!important}path{color:#f8f9fa}.appBottomMenu .item.active .icon,.appBottomMenu .item.active ion-icon,.appBottomMenu .item.active strong{color:#fff!important}</style>
 <div id="appCapsule" style="background-color: white !important;">
@@ -287,14 +287,14 @@ include("auth.php");
 				<!-- action group -->
 				
 				<div class="action-group">
-					<a href="" class="action-button">
+					<a href="dashboard.php" class="action-button">
 					<div class="in">
 						<div class="iconbox">
 							<i class="fas fa-wallet"></i>
 						</div>
 						My Wallet </div>
 				</a>
-					<a href="Profile.html" class="action-button">
+					<a href="Profile.php" class="action-button">
 						<div class="in">
 							<div class="iconbox">
 								<i class="fas fa-user"></i>
@@ -500,7 +500,7 @@ include("auth.php");
 <!-- * Notification -->
 <!-- App Bottom Menu -->
 <div class="appBottomMenu" style="background: #1b8da0;">
-	<a href="Profile.html" class="item">
+	<a href="Profile.php" class="item">
 		<div class="col">
 			<i class="fa fa-cog fa-2x"></i>
 			<strong>Settings</strong> </div>

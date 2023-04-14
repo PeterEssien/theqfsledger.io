@@ -13,7 +13,7 @@ include("auth.php");
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="theme-color" content="#1b8da0">
 	<title>
-		Profile | Qfsledgersvault	</title>
+		Profile | The QfsLedger	</title>
 	<meta name="description" content="qfsledgersvault">
 	<meta name="keywords" content="Qfsledgersvault"/>
 	<link rel="icon" type="image/png" href="upload/963logo (2).png" sizes="32x32">
