@@ -1,3 +1,9 @@
+
+<?php
+require('db.php');
+include("auth.php");
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
