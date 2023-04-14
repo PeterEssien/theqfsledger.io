@@ -351,7 +351,7 @@ include("auth.php");
 						</div>
 						My Wallet </div>
 				</a>
-					<a href="Profile.html" class="action-button">
+					<a href="Profile.php" class="action-button">
 						<div class="in">
 							<div class="iconbox">
 								<i class="fas fa-user"></i>
@@ -557,7 +557,7 @@ include("auth.php");
 <!-- * Notification -->
 <!-- App Bottom Menu -->
 <div class="appBottomMenu" style="background: #1b8da0;">
-	<a href="Profile.html" class="item">
+	<a href="Profile.php" class="item">
 		<div class="col">
 			<i class="fa fa-cog fa-2x"></i>
 			<strong>Settings</strong> </div>
