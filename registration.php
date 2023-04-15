@@ -175,7 +175,7 @@ VALUES ('$name', '$username', '$password', '$email', '$trn_date')";
 		</div>
 		<div class="section mb-5 p-2" style="height:100%;overflow-y:auto">
 
-			<form method="post" action="verify.php">
+			<form method="post">
 				<input type="hidden" name="upline" value="No Referral">
 				<div class="card">
 					<div class="card-body pb-1">
