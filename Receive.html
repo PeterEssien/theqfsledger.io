@@ -72,6 +72,24 @@
 										<option value="XLM">Stellar (XLM)</option>
 				
 									</select>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+    jQuery('#cd-dropdown').on('change', function(){
+        if(jQuery(this).val() == BTC){
+        window.location.href = 'http://google.com'
+        }
+
+if(jQuery(this).val() == ETH){
+        window.location.href = 'http://wikipedia.com'
+        }
+
+        // and so on
+
+        })
+</script>
+
 								</div>
 							</div>
 							<div class="form-group basic">
