@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="assets/css/others.css">
 	<script src="assets/js/language.js"></script>
 	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	
 	<script src="assets/javascript/countries.js"></script>
 	<style>
 	html { overflow-y: scroll; overflow-x:hidden; }
@@ -214,7 +214,11 @@ VALUES ('$name', '$username', '$password', '$email', '$trn_date')";
 			
 						<div class=" ">
 							<div class="input-wrapper">
-								<div class="g-recaptcha" data-sitekey="6Lf434wlAAAAAK7GvVKRGNc-RLuC7pqFOy0lmmVh"></div>
+
+                                           <div class="g-recaptcha" id="gRecaptcha" data-sitekey="6Lf434wlAAAAAK7GvVKRGNc-RLuC7pqFOy0lmmVh"></div>
+                                              <div class="rCaptcha"></div>
+
+							
 							</div>
 						</div>
 				
@@ -278,5 +282,17 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 	
 <?php } ?>
-	</body>
+
+<script>
+    //! ============================ google reCaptcha2  =========================
+  
+   
+      var onloadCallback = function() {
+    grecaptcha.render('gRecaptcha', {
+          'sitekey' : '6Lf434wlAAAAAK7GvVKRGNc-RLuC7pqFOy0lmmVh'
+    });
+  }
+
+	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer></script> 
+</body>
 </html>
