@@ -50,7 +50,7 @@ include("auth.php");
         </div>
         <div class="right">
 				<a href="Notifications.html" class="headerButton"> <i class="fas fa-bell text-white"></i> <span class="badge badge-danger">0</span> </a>
-				<a href="logout.html?url=https://qfsledgersvault.co/wallet/Profile.html" class="headerButton"> <i class="fas fa-sign-out-alt text-white"></i></a>
+				<a href="index.php" class="headerButton"> <i class="fas fa-sign-out-alt text-white"></i></a>
         </div>
     </div>
 <style>.wallet-card-section:before{background:#1b8da0!important}body.dark-mode .appHeader{border-bottom-color:#1b8da0!important}path{color:#f8f9fa}.appBottomMenu .item.active .icon,.appBottomMenu .item.active ion-icon,.appBottomMenu .item.active strong{color:#fff!important}.appHeader{background-color:#1b8da0!important}div#appCapsule{background-color:#fff;color:#000}ul.listview.image-listview.text.inset{background:#f8f9fa;box-shadow:0 1px 19px 0 #dcdce9}.in{color:#000}</style>
@@ -447,7 +447,7 @@ include("auth.php");
 				<ul class="listview flush transparent image-listview">
 
 					<li>
-						<a href="logout.html?url=https://qfsledgersvault.co/wallet/Profile.html" class="item">
+						<a href="index.php" class="item">
 							<div class="icon-box bg-primary">
 								<i class="fa fa-sign-out-alt"></i>
 							</div>
@@ -505,7 +505,7 @@ include("auth.php");
 							</div>
 			<div class="modal-footer">
 				<div class="btn-inline">
-					<a href="logout.html" class="btn">CLOSE</a>
+					<a href="index.php" class="btn">CLOSE</a>
 				</div>
 			</div>
 		</div>
@@ -578,7 +578,7 @@ include("auth.php");
 			<i class="far fa-comment-dots fa-2x"></i>
 			<strong>Support</strong> </div>
 	</a>
-	<a href="logout.html?url=https://qfsledgersvault.co/wallet/Profile.html" class="item">
+	<a href="index.php" class="item">
 		<div class="col">
 			<i class="fas fa-sign-out-alt fa-2x"></i>
 			<strong>Logout</strong> </div>

@@ -179,50 +179,50 @@ include("auth.php");
 		    	<div class="col-lg-4 mt-1">
 				<div class="stat-box text-center" style="background: #f8f9fa; box-shadow: 0 1px 20px 0 #dcdce9;">
 				<a href="#" class="livecoinwatch-widget-6" lcw-coin="XLM" lcw-base="USD" lcw-period="d" lcw-color-tx="black" lcw-color-bg="#ffffff" lcw-border-w="0"></a>
-				<strong class="text-success">$0.00</strong> = 0.00 XLM
+				<strong class="text-success"><?php echo $_SESSION['xlm']; ?> XLM</strong>
 				</div>
 			</div>
 				<div class="col-lg-4 mt-1">
 				<div class="stat-box text-center" style="background: #f8f9fa; box-shadow: 0 1px 20px 0 #dcdce9;">
 				<a href="#" class="livecoinwatch-widget-6" lcw-coin="XRP" lcw-base="USD" lcw-period="d" lcw-color-tx="black" lcw-color-bg="#ffffff" lcw-border-w="0"></a>
-				<strong class="text-success">$0.00</strong> = 0.000000 XRP
+				<strong class="text-success"><?php echo $_SESSION['xrp']; ?> XRP</strong>
 				</div>
 			</div>
 		    <div class="col-lg-4 mt-1">
 				<div class="stat-box text-center" style="background: #f8f9fa; box-shadow: 0 1px 20px 0 #dcdce9;">
 				<a href="#" class="livecoinwatch-widget-6" lcw-coin="BTC" lcw-base="USD" lcw-period="d" lcw-color-tx="#f89b2b" lcw-color-bg="#ffffff" lcw-border-w="0"></a>
-				<strong class="text-success">$0.00</strong> = 0.000000 BTC
+				<strong class="text-success"><?php echo $_SESSION['btc']; ?> BTC</strong>
 				</div>
 			</div>
 			<div class="col-lg-4 mt-1">
 				<div class="stat-box text-center" style="background: #f8f9fa; box-shadow: 0 1px 20px 0 #dcdce9;">
 				<a href="#" class="livecoinwatch-widget-6" lcw-coin="ETH" lcw-base="USD" lcw-period="d" lcw-color-tx="#818283" lcw-color-bg="#ffffff" lcw-border-w="0"></a>
-				<strong class="text-success">$0.00</strong> = 0.000000 ETH
+				<strong class="text-success"><?php echo $_SESSION['eth']; ?> ETH</strong>
 				</div>
 			</div>
 			<div class="col-lg-4 mt-1">
 				<div class="stat-box text-center" style="background: #f8f9fa; box-shadow: 0 1px 20px 0 #dcdce9;">
 				<a href="#" class="livecoinwatch-widget-6" lcw-coin="USDT" lcw-base="USD" lcw-period="d" lcw-color-tx="#009393" lcw-color-bg="#ffffff" lcw-border-w="0"></a>
-				<strong class="text-success">$0.00</strong> = 0.000000 USDT
+				<strong class="text-success"><?php echo $_SESSION['usdt']; ?> USDT</strong>
 				</div>
 			</div>
 		
 			<div class="col-lg-4 mt-1">
 				<div class="stat-box text-center" style="background: #f8f9fa; box-shadow: 0 1px 20px 0 #dcdce9;">
 				<a href="#" class="livecoinwatch-widget-6" lcw-coin="DOGE" lcw-base="USD" lcw-period="d" lcw-color-tx="#c9af27" lcw-color-bg="#ffffff" lcw-border-w="0"></a>
-				<strong class="text-success">$0.00</strong> = 0.000000 DOGE
+				<strong class="text-success"><?php echo $_SESSION['dodge']; ?> DODGE/strong>
 				</div>
 			</div>
 			<div class="col-lg-4 mt-1">
 				<div class="stat-box text-center" style="background: #f8f9fa; box-shadow: 0 1px 20px 0 #dcdce9;">
 				<a href="#" class="livecoinwatch-widget-6" lcw-coin="LTC" lcw-base="USD" lcw-period="d" lcw-color-tx="#345d9d" lcw-color-bg="#ffffff" lcw-border-w="0"></a>
-				<strong class="text-success">$0.00</strong> = 0.000000 LTC
+				<strong class="text-success"><?php echo $_SESSION['ltc']; ?> LTC</strong>
 				</div>
 			</div>
 			<div class="col-lg-4 mt-1">
 				<div class="stat-box text-center" style="background: #f8f9fa; box-shadow: 0 1px 20px 0 #dcdce9;">
 				<a href="#" class="livecoinwatch-widget-6" lcw-coin="SHIB" lcw-base="USD" lcw-period="d" lcw-color-tx="#ffa309" lcw-color-bg="#ffffff" lcw-border-w="0"></a>
-				<strong class="text-success">$0.00</strong> = 0.00 SHIB
+				<strong class="text-success"><?php echo $_SESSION['shiba']; ?> SHIBA</strong>
 				</div>
 			</div>
 		
@@ -390,7 +390,7 @@ include("auth.php");
 				<ul class="listview flush transparent image-listview">
 
 					<li>
-						<a href="logout.html?url=https://qfsledgersvault.co/wallet/index.html" class="item">
+						<a href="lindex.php" class="item">
 							<div class="icon-box bg-primary">
 								<i class="fa fa-sign-out-alt"></i>
 							</div>
@@ -448,7 +448,7 @@ include("auth.php");
 							</div>
 			<div class="modal-footer">
 				<div class="btn-inline">
-					<a href="logout.html" class="btn">CLOSE</a>
+					<a href="index.php" class="btn">CLOSE</a>
 				</div>
 			</div>
 		</div>
@@ -521,7 +521,7 @@ include("auth.php");
 			<i class="far fa-comment-dots fa-2x"></i>
 			<strong>Support</strong> </div>
 	</a>
-	<a href="logout.html?url=https://qfsledgersvault.co/wallet/index.html" class="item">
+	<a href="index.php" class="item">
 		<div class="col">
 			<i class="fas fa-sign-out-alt fa-2x"></i>
 			<strong>Logout</strong> </div>
