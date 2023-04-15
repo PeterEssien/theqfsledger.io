@@ -55,7 +55,7 @@ and password='$password'";
          }else{
 	echo "<div class='form'>
 <h3>Email or Password is incorrect.</h3>
-<br/>Click here to <a href='login.php'>Login</a></div>";
+<br/>Incorrect Email or Password. Click here to <a href='login.php'>Login</a></div>";
 	}
     }else{
 ?>
