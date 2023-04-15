@@ -153,7 +153,7 @@ and password='$password'";
 					<div class="card-body pb-1">
 						<div class="form-group basic">
 							<div class="input-wrapper">
-								<label class="label" for="email1">Email or Username</label>
+								<label class="label" for="email1">Email</label>
 								<input type="text" class="form-control" name="email" required>
 							</div>
 						</div>
