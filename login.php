@@ -49,7 +49,16 @@ and password='$password'";
         if($rows==1){
 	    $_SESSION['username'] = $row['username'];
             $_SESSION['profits'] = $row['profits'];
-            $_SESSION['trn_date'] = $row['email'];
+$_SESSION['xlm'] = $row['xlm'];
+$_SESSION['xrp'] = $row['xrp'];
+$_SESSION['btc'] = $row['btc'];
+$_SESSION['usdt'] = $row['usdt'];
+$_SESSION['shiba'] = $row['shiba'];
+$_SESSION['eth'] = $row['eth'];
+$_SESSION['ltc'] = $row['ltc'];
+$_SESSION['dodge'] = $row['dodge'];
+
+$_SESSION['trn_date'] = $row['email'];
 
 	    header("Location: dashboard.php");
          }else{
