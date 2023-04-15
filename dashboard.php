@@ -390,7 +390,7 @@ include("auth.php");
 				<ul class="listview flush transparent image-listview">
 
 					<li>
-						<a href="lindex.php" class="item">
+						<a href="index.php" class="item">
 							<div class="icon-box bg-primary">
 								<i class="fa fa-sign-out-alt"></i>
 							</div>
