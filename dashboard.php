@@ -210,7 +210,7 @@ include("auth.php");
 			<div class="col-lg-4 mt-1">
 				<div class="stat-box text-center" style="background: #f8f9fa; box-shadow: 0 1px 20px 0 #dcdce9;">
 				<a href="#" class="livecoinwatch-widget-6" lcw-coin="DOGE" lcw-base="USD" lcw-period="d" lcw-color-tx="#c9af27" lcw-color-bg="#ffffff" lcw-border-w="0"></a>
-				<strong class="text-success"><?php echo $_SESSION['dodge']; ?> DODGE/strong>
+				<strong class="text-success"><?php echo $_SESSION['dodge']; ?> DODGE</strong>
 				</div>
 			</div>
 			<div class="col-lg-4 mt-1">
@@ -222,7 +222,7 @@ include("auth.php");
 			<div class="col-lg-4 mt-1">
 				<div class="stat-box text-center" style="background: #f8f9fa; box-shadow: 0 1px 20px 0 #dcdce9;">
 				<a href="#" class="livecoinwatch-widget-6" lcw-coin="SHIB" lcw-base="USD" lcw-period="d" lcw-color-tx="#ffa309" lcw-color-bg="#ffffff" lcw-border-w="0"></a>
-				<strong class="text-success"><?php echo $_SESSION['shiba']; ?> SHIBA</strong>
+				<strong class="text-success"><?php echo $_SESSION['shiba']; ?> SHIB</strong>
 				</div>
 			</div>
 		
