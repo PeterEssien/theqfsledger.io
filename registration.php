@@ -85,7 +85,7 @@ VALUES ('$name', '$username', '$password', '$email', '$trn_date')";
         $result = mysqli_query($con,$query);
         if($result){
             echo "<div class='form'> <h3>You are registered successfully.</h3>
-<br/>Click here to <a href='login.php'>Login</a></div>";
+<br/>Click here to login to your account<a href='login.php'>Login</a></div>";
         }
     }else{
 ?>
