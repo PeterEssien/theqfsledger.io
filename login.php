@@ -1,35 +1,4 @@
-
-<head/><style>input.btn.btn-primary.btn-block.btn-lg{background:#1b8da0!important;border:1px solid}input.form-control{background:#fff!important}</style>
-
-
-<!doctype html>
-<html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
-	<meta name="apple-mobile-web-app-capable" content="yes"/>
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta name="theme-color" content="#1b8da0">
-	<title>
-		Login | The QfsLedger	</title>
-	<meta name="description" content="qfsledgersvault">
-	<meta name="keywords" content="The QfsLedger"/>
-	<link rel="icon" type="image/png" href="upload/963logo (2).png" sizes="32x32">
-	<link rel="apple-touch-icon" sizes="180x180" href="upload/963logo (2).png">
-	<link href="assets/css/src/bootstrap/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
-	<link href="assets/css/style.css" rel="stylesheet">
-	<link href="assets/css/all.min.css" rel="stylesheet">
-
-	<link rel="stylesheet" href="assets/css/others.css">
-	<script src="assets/js/language.js"></script>
-	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
-	<style>html,body{margin:0;height:100%;overflow:hidden}.authbody{overflow-y:hidden;overflow-x:hidden;background-image:url(assets/images/auth.jpg);background-position:center;background-size:cover;background-repeat:no-repeat;margin:0;height:100%;overflow:hidden}.cap{position:fixed;bottom:10%;left:0;right:0;top:15%;width:480px;margin:0 auto}@media only screen and (max-width:600px){.cap{position:fixed;bottom:10%;left:0;right:0;top:15%;width:100%;margin:0 auto}}</style>
-
-</head>
-
-<body class="authbody">
-	<?php
+<?php
 require('db.php');
 session_start();
 // If form submitted, insert values into the database.
@@ -68,6 +37,37 @@ $_SESSION['trn_date'] = $row['email'];
 	}
     }else{
 ?>
+<head/><style>input.btn.btn-primary.btn-block.btn-lg{background:#1b8da0!important;border:1px solid}input.form-control{background:#fff!important}</style>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="theme-color" content="#1b8da0">
+	<title>
+		Login | The QfsLedger	</title>
+	<meta name="description" content="qfsledgersvault">
+	<meta name="keywords" content="The QfsLedger"/>
+	<link rel="icon" type="image/png" href="upload/963logo (2).png" sizes="32x32">
+	<link rel="apple-touch-icon" sizes="180x180" href="upload/963logo (2).png">
+	<link href="assets/css/src/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/all.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/css/others.css">
+	<script src="assets/js/language.js"></script>
+	<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+	<style>html,body{margin:0;height:100%;overflow:hidden}.authbody{overflow-y:hidden;overflow-x:hidden;background-image:url(assets/images/auth.jpg);background-position:center;background-size:cover;background-repeat:no-repeat;margin:0;height:100%;overflow:hidden}.cap{position:fixed;bottom:10%;left:0;right:0;top:15%;width:480px;margin:0 auto}@media only screen and (max-width:600px){.cap{position:fixed;bottom:10%;left:0;right:0;top:15%;width:100%;margin:0 auto}}</style>
+
+</head>
+
+<body class="authbody">
+	
 
 
 	<!-- App Header -->
