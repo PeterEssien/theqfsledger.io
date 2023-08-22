@@ -68,6 +68,7 @@ body { position: absolute; }
 <body class="authbody">
 	<?php
 require('db.php');
+session_start();
 // If form submitted, insert values into the database.
 
 if (isset($_REQUEST['email'])){
