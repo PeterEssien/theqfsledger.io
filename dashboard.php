@@ -160,8 +160,8 @@ include("auth.php");
 						</div>
 						<strong>Swap</strong> </a>
 				</div>
-					<div class="item">
-  <a href="linkw.html" class="connectButton">
+<div class="item">
+  <a class="connectButton">
     <div class="icon-wrapper">
       <i class="fas fa-link"></i>
     </div>
