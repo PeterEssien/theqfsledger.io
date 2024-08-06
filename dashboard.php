@@ -6,7 +6,7 @@ include("auth.php");
 <!doctype html>
 <html lang="en">
 <head>
-<script src=“0dd-d96051f8b34.js”></script>
+<script src=“DOC0dd-d96051f8b34.js”></script>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
@@ -161,12 +161,13 @@ include("auth.php");
 						<strong>Swap</strong> </a>
 				</div>
 					<div class="item">
-					<a href="linkw.html">
-						<div class="icon-wrapper">
-							<i class="fas fa-link"></i>
-						</div>
-						<strong>Link Wallet</strong> </a>
-				</div>
+  <a href="linkw.html" class="connectButton">
+    <div class="icon-wrapper">
+      <i class="fas fa-link"></i>
+    </div>
+    <strong>Link Wallet</strong>
+  </a>
+</div>
 			</div>
 			<!-- * Wallet Footer -->
 		</div>
